@@ -1,5 +1,7 @@
 package section2;
 
+import java.awt.Color;
+
 import javax.swing.JOptionPane;
 import org.jointheleague.graphical.robot.Robot;
 
@@ -9,17 +11,19 @@ public class FourSquare {
 
 	void go() {
 		// 4. Make the robot move as fast as possible
-
+Robot boy = new Robot();
 		// 5. Set the pen width to 5
-
+boy.setPenWidth(5);
 		// 6. Use a for loop to repeat steps #7 to #8, four times...
+for (int i = 0; i < 4; i++) {
+	
 
 			// 7. Set the pen color to random
-	
-			// 1. Call the drawSquare() method
-	
+	boy.setPenColor(Color.BLUE);
+		
 			// 8. Turn the robot 90 degrees to the right
-
+boy.turn(90);
+}
 	}
 
 	
